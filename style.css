@@ -1,0 +1,267 @@
+*{
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+body{
+    margin: 0;
+}
+
+figure{
+    margin: 0 auto;
+}
+
+#conteneur{
+    width: 100%;
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    margin: auto;
+    margin: 0 auto;
+}
+
+header h1{
+    background-color: cornflowerblue;
+    margin: 0 auto;
+    padding : 0.2em;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+#burger{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    background-color: cornflowerblue;
+    height: 31px;
+    position: relative;
+}
+
+.icon{
+    position: absolute;
+    right: 0;
+    margin: 0;
+    padding: 6px 5px 5px 5px;
+    background-color: #2a65bd;
+}
+
+#myLinks{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    background-color: cornflowerblue;
+}
+
+nav a{
+    padding: 0.5em;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    width:100%;
+}
+
+nav .icon{
+    width: 25px;
+}
+
+nav a:hover{
+    background-color: gold;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article{
+    background-color: white;
+}
+
+h2{
+    margin: 0 auto;
+    padding : 1em;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: bold;
+    color: gold;
+    background-color: white;
+    text-transform: uppercase;
+}
+
+article{
+    width: 100%;
+}
+
+article p{
+    margin: 0 auto;
+    padding : 0em 1em 1em 1em;
+    font-family:Arial, Helvetica, sans-serif ;
+    color: black;
+    font-size: 15px;
+    text-align: justify;    
+}
+
+.bonus{
+    display: none;
+}
+
+article figure{
+    width: auto;
+    padding : 0em 1em 1em 1em;
+    justify-content: center;
+}
+
+aside{
+    background-color: cornflowerblue;
+    margin : 0px 10px 10px 10px;
+    padding: 10px;
+}
+
+aside figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width : auto;
+    margin: 0 auto;
+}
+
+aside figcaption{
+    width: 100%;
+}
+
+aside img{
+    border: white solid 1px;
+    width: 80%; 
+}
+
+figcaption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figcaption p{
+    font-family:Arial, Helvetica, sans-serif ;
+    color:white;
+    font-size: 15px;
+    text-align: justify;    
+}
+
+figcaption h3{
+    margin: 0 auto;
+    padding : 0.4em 0 0 0;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: bold;
+    color:white;
+    text-align: center;
+    font-size:25px;
+}
+
+figcaption h4{
+    margin: 0 auto;
+    padding : 0 em;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight:normal;
+    font-style: italic;
+    color:white;
+    text-align: center;
+    font-size:medium;
+}
+
+footer{
+    text-align: center;
+    background-color:royalblue;
+    padding: 0.5em;
+    font-family:Arial, Helvetica, sans-serif ;
+    color:white;
+}
+
+@media only screen and (min-width: 600px) {
+
+    #conteneur{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    #burger{
+        display: none;
+    }
+
+    #myLinks{
+        display: flex;
+        flex-direction: row;
+    }
+
+    article{
+        width: 80%;
+    }
+
+    aside figure{
+        width : 50%;   
+    }
+    
+
+@media only screen and (min-width: 992px) {
+
+    body{
+        background-color: gold;
+    }
+
+    #conteneur{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    article figure{
+        display: flex;
+        width: 100%;
+    }
+    
+    article img{
+        border: solid black 1px;
+        margin : 3px;
+        width: 100%;
+    }
+    
+    #main{
+        flex-direction: row;
+        background-color: white;
+        align-items: stretch;
+    }
+
+    aside{
+        width: 40%;
+        margin: 80px 10px 10px 10px;
+    }
+
+    aside figure{
+        width: 90%;
+    }
+
+    aside img{
+        width: 70%;
+    }
+
+    aside p{
+        width: 90%;
+    }
+
+    .bonus{
+        display: inline;
+    }
+}        
